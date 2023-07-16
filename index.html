@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Countries</title>
+  </head>
+  <body class="main-div">
+    <nav class="bg-purple-700 h-12 rounded-lg text-center">
+      <h1 class="text-white text-3xl font-bold pt-1">Find in the world</h1>
+    </nav>
+    <div class="">
+      <div class="flex justify-center">
+        <div class="mt-6 flex flex-col gap-10 justify-center">
+          <div class="flex justify-center">
+            <input
+              class="rounded bg-slate-300 p-3"
+              type="text"
+              placeholder="Search"
+              id="search"
+            />
+            <button
+              id="search-btn"
+              class="cursor-pointer bg-slate-500 p-3 rounded hover:bg-slate-700 text-white"
+            >
+              Search
+            </button>
+          </div>
+          <div id="cards-container"><div id="parent" class="flex gap-3"></div></div>
+        </div>
+      </div>
+    </div>
+    <footer class="flex justify-center mt-24 gap-5">
+      <button id="prev">Prev</button><span id="countPage">PAGE: 1</span><button id="next">Next</button>
+    </footer>
+    <script type="module" src="/main.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
